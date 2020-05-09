@@ -46,6 +46,7 @@ namespace PacMan
             var mySerializer = new XmlSerializer(typeof(List<Player>));
             var myFileStream = new FileStream("HighScores.xml", FileMode.Open);
             playersList = (List<Player>)mySerializer.Deserialize(myFileStream);
+            myFileStream.Close();
         }
         //Reset highscores. Заміна поточних рекордів на рекорди за замовчуванням
         public void Reset()
