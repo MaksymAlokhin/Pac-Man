@@ -115,28 +115,7 @@
     <None Include="Resources\Spritemap.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\intermission.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\credit.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\death_1.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\death_2.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eat_fruit.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eat_ghost.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\extend.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\game_start.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\munch_1.wav" />
@@ -145,28 +124,54 @@
     <None Include="Resources\munch_2.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\power_pellet.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\retreating.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\siren_1.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\siren_2.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\siren_3.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\siren_4.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\siren_5.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Pac-Man.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sounds\death_1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\death_2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\eat_fruit.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\eat_ghost.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\extend.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\game_start.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\intermission.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\munch_3.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\power_pellet.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\siren_1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\siren_2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\siren_3.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\siren_4.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\siren_5.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

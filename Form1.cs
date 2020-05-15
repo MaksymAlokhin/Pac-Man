@@ -126,7 +126,7 @@ namespace PacMan
             tmr_refresh.Start();
 
             wmp_game_start.Stop();
-            wmp_game_start.Open(new Uri("Sound/game_start.wav", UriKind.Relative));
+            wmp_game_start.Open(new Uri("Sounds/game_start.wav", UriKind.Relative));
             //wmp_game_start.Position = new TimeSpan(0);
             //wmp_game_start.Position = new TimeSpan(0, 0, 0, 3, 935);
             wmp_game_start.Play();
@@ -141,7 +141,7 @@ namespace PacMan
             wmp_siren_5.Stop();
             sirenFinishedPlaying = true;
             wmp_intermission.Stop();
-            wmp_intermission.Open(new Uri("Sound/intermission.wav", UriKind.Relative));
+            wmp_intermission.Open(new Uri("Sounds/intermission.wav", UriKind.Relative));
             //wmp_intermission.Position = new TimeSpan(0);
             wmp_intermission.Play();
 
@@ -179,7 +179,7 @@ namespace PacMan
             ShowReadyText();
 
             wmp_game_start.Stop();
-            wmp_game_start.Open(new Uri("Sound/game_start.wav", UriKind.Relative));
+            wmp_game_start.Open(new Uri("Sounds/game_start.wav", UriKind.Relative));
             //wmp_game_start.Position = new TimeSpan(0);
             //wmp_game_start.Position = new TimeSpan(0, 0, 0, 3, 935);
             wmp_game_start.Play();
@@ -324,37 +324,37 @@ namespace PacMan
             //Sound. Звук
             wmp_game_start = new MediaPlayer();
             wmp_game_start.MediaEnded += Start;
-            //wmp_game_start.Open(new Uri("Sound/game_start.wav", UriKind.Relative));
+            //wmp_game_start.Open(new Uri("Sounds/game_start.wav", UriKind.Relative));
             wmp_game_start.Volume = volume;
 
             wmp_intermission = new MediaPlayer();
             wmp_intermission.MediaEnded += NextLevel;
-            //wmp_intermission.Open(new Uri("Sound/intermission.wav", UriKind.Relative));
+            //wmp_intermission.Open(new Uri("Sounds/intermission.wav", UriKind.Relative));
             wmp_intermission.Volume = volume;
 
             wmp_siren_1 = new MediaPlayer();
             wmp_siren_1.MediaEnded += SirenRewind;
-            //wmp_siren_1.Open(new Uri("Sound/siren_1.wav", UriKind.Relative));
+            //wmp_siren_1.Open(new Uri("Sounds/siren_1.wav", UriKind.Relative));
             wmp_siren_1.Volume = volume;
 
             wmp_siren_2 = new MediaPlayer();
             wmp_siren_2.MediaEnded += SirenRewind;
-            //wmp_siren_2.Open(new Uri("Sound/siren_2.wav", UriKind.Relative));
+            //wmp_siren_2.Open(new Uri("Sounds/siren_2.wav", UriKind.Relative));
             wmp_siren_2.Volume = volume;
 
             wmp_siren_3 = new MediaPlayer();
             wmp_siren_3.MediaEnded += SirenRewind;
-            //wmp_siren_3.Open(new Uri("Sound/siren_3.wav", UriKind.Relative));
+            //wmp_siren_3.Open(new Uri("Sounds/siren_3.wav", UriKind.Relative));
             wmp_siren_3.Volume = volume;
 
             wmp_siren_4 = new MediaPlayer();
             wmp_siren_4.MediaEnded += SirenRewind;
-            //wmp_siren_4.Open(new Uri("Sound/siren_4.wav", UriKind.Relative));
+            //wmp_siren_4.Open(new Uri("Sounds/siren_4.wav", UriKind.Relative));
             wmp_siren_4.Volume = volume;
 
             wmp_siren_5 = new MediaPlayer();
             wmp_siren_5.MediaEnded += SirenRewind;
-            //wmp_siren_5.Open(new Uri("Sound/siren_5.wav", UriKind.Relative));
+            //wmp_siren_5.Open(new Uri("Sounds/siren_5.wav", UriKind.Relative));
             wmp_siren_5.Volume = volume;
 
         }
@@ -409,11 +409,11 @@ namespace PacMan
                 wmp_siren_4.Stop();
                 wmp_siren_5.Stop();
 
-                wmp_siren_1.Open(new Uri("Sound/siren_1.wav", UriKind.Relative));
-                wmp_siren_2.Open(new Uri("Sound/siren_2.wav", UriKind.Relative));
-                wmp_siren_3.Open(new Uri("Sound/siren_3.wav", UriKind.Relative));
-                wmp_siren_4.Open(new Uri("Sound/siren_4.wav", UriKind.Relative));
-                wmp_siren_5.Open(new Uri("Sound/siren_5.wav", UriKind.Relative));
+                wmp_siren_1.Open(new Uri("Sounds/siren_1.wav", UriKind.Relative));
+                wmp_siren_2.Open(new Uri("Sounds/siren_2.wav", UriKind.Relative));
+                wmp_siren_3.Open(new Uri("Sounds/siren_3.wav", UriKind.Relative));
+                wmp_siren_4.Open(new Uri("Sounds/siren_4.wav", UriKind.Relative));
+                wmp_siren_5.Open(new Uri("Sounds/siren_5.wav", UriKind.Relative));
 
                 //wmp_siren_1.Position = new TimeSpan(0);
                 //wmp_siren_2.Position = new TimeSpan(0);

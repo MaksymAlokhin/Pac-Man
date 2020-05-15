@@ -537,7 +537,7 @@ namespace PacMan
                 && PacForm.pixelToCoord(form.pacman.location) == PacForm.pixelToCoord(location))
             {
                 wmp_eat_ghost.Stop();
-                wmp_eat_ghost.Open(new Uri("Sound/eat_ghost.wav", UriKind.Relative));
+                wmp_eat_ghost.Open(new Uri("Sounds/eat_ghost.wav", UriKind.Relative));
                 //wmp_eat_ghost.Position = new TimeSpan(0);
                 wmp_eat_ghost.Play();
                 travellingHome = true;
@@ -548,7 +548,7 @@ namespace PacMan
                 if (travellingGhosts == 4 && !eatenAll)
                 {
                     wmp_extend.Stop();
-                    wmp_extend.Open(new Uri("Sound/extend.wav", UriKind.Relative));
+                    wmp_extend.Open(new Uri("Sounds/extend.wav", UriKind.Relative));
                     //wmp_extend.Position = new TimeSpan(0);
                     wmp_extend.Play();
                     form.player.adjustScore(12000);
@@ -718,11 +718,11 @@ namespace PacMan
         {
             //sound. Звук
             wmp_eat_ghost = new MediaPlayer();
-            //wmp_eat_ghost.Open(new Uri("Sound/eat_ghost.wav", UriKind.Relative));
+            //wmp_eat_ghost.Open(new Uri("Sounds/eat_ghost.wav", UriKind.Relative));
             wmp_eat_ghost.Volume = PacForm.volume;
 
             wmp_extend = new MediaPlayer();
-            //wmp_extend.Open(new Uri("Sound/extend.wav", UriKind.Relative));
+            //wmp_extend.Open(new Uri("Sounds/extend.wav", UriKind.Relative));
             wmp_extend.Volume = PacForm.volume;
 
         }

@@ -174,7 +174,7 @@ namespace PacMan
                     if(playedEatingSound)
                     {
                         wmp_munch_3.Stop();
-                        wmp_munch_3.Open(new Uri("Sound/munch_3.wav", UriKind.Relative));
+                        wmp_munch_3.Open(new Uri("Sounds/munch_3.wav", UriKind.Relative));
                         //wmp_munch_3.Position = new TimeSpan(0);
                         wmp_munch_3.Play();
                         playedEatingSound = false;
@@ -211,7 +211,7 @@ namespace PacMan
                 if (itemsMap[coord.Y, coord.X] == 3)
                 {
                     wmp_power_pellet.Stop();
-                    wmp_power_pellet.Open(new Uri("Sound/power_pellet.wav", UriKind.Relative));
+                    wmp_power_pellet.Open(new Uri("Sounds/power_pellet.wav", UriKind.Relative));
                     //wmp_power_pellet.Position = new TimeSpan(0);
                     wmp_power_pellet.Play();
                     EnergizedStateStartedTime = DateTime.Now;
@@ -245,7 +245,7 @@ namespace PacMan
             if(fruitTime && itemsMap[coord.Y, coord.X] == 4)
             {
                 wmp_eat_fruit.Stop();
-                wmp_eat_fruit.Open(new Uri("Sound/eat_fruit.wav", UriKind.Relative));
+                wmp_eat_fruit.Open(new Uri("Sounds/eat_fruit.wav", UriKind.Relative));
                 //wmp_eat_fruit.Position = new TimeSpan(0);
                 wmp_eat_fruit.Play();
                 showScore = true;
@@ -358,16 +358,16 @@ namespace PacMan
         {
             //Sound. Звук
             wmp_eat_fruit = new MediaPlayer();
-            //wmp_eat_fruit.Open(new Uri("Sound/eat_fruit.wav", UriKind.Relative));
+            //wmp_eat_fruit.Open(new Uri("Sounds/eat_fruit.wav", UriKind.Relative));
             wmp_eat_fruit.Volume = PacForm.volume;
 
             wmp_power_pellet = new MediaPlayer();
-            //wmp_power_pellet.Open(new Uri("Sound/power_pellet.wav", UriKind.Relative));
+            //wmp_power_pellet.Open(new Uri("Sounds/power_pellet.wav", UriKind.Relative));
             wmp_power_pellet.Volume = PacForm.volume;
 
             wmp_munch_3 = new MediaPlayer();
             wmp_munch_3.MediaEnded += EatingSoundRewind;
-            //wmp_munch_3.Open(new Uri("Sound/munch_3.wav", UriKind.Relative));
+            //wmp_munch_3.Open(new Uri("Sounds/munch_3.wav", UriKind.Relative));
             wmp_munch_3.Volume = PacForm.volume;
 
             playedEatingSound = true;

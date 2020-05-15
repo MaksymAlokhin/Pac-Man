@@ -274,7 +274,7 @@ namespace PacMan
             form.wmp_siren_5.Stop();
 
             wmp_death_1.Stop();
-            wmp_death_1.Open(new Uri("Sound/death_1.wav", UriKind.Relative));
+            wmp_death_1.Open(new Uri("Sounds/death_1.wav", UriKind.Relative));
             //wmp_death_1.Position = new TimeSpan(0);
             wmp_death_1.Play();
 
@@ -285,7 +285,7 @@ namespace PacMan
         public void PlayDeathSound(object sender, EventArgs e)
         {
             wmp_death_2.Stop();
-            wmp_death_2.Open(new Uri("Sound/death_2.wav", UriKind.Relative));
+            wmp_death_2.Open(new Uri("Sounds/death_2.wav", UriKind.Relative));
             //wmp_death_2.Position = new TimeSpan(0);
             wmp_death_2.Play();
         }
@@ -331,11 +331,11 @@ namespace PacMan
         void InitializeSound()
         {
             wmp_death_1 = new MediaPlayer();
-            //wmp_death_1.Open(new Uri("Sound/death_1.wav", UriKind.Relative));
+            //wmp_death_1.Open(new Uri("Sounds/death_1.wav", UriKind.Relative));
             wmp_death_1.Volume = PacForm.volume;
             wmp_death_1.MediaEnded += PlayDeathSound;
             wmp_death_2 = new MediaPlayer();
-            //wmp_death_2.Open(new Uri("Sound/death_2.wav", UriKind.Relative));
+            //wmp_death_2.Open(new Uri("Sounds/death_2.wav", UriKind.Relative));
             wmp_death_2.Volume = PacForm.volume;
         }
         //Drawing Pac-Man. Малювання пакмена
